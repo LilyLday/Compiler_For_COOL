@@ -1,0 +1,16 @@
+class B{
+      a:Object;
+      a:String;
+};
+
+class A inherits B{
+      self: String <- 1+"2";
+      a:Hi <- a;
+      b(a :IO) : IO {{b <- "1";b + "Int";a;}};
+};
+
+class Main inherits A{
+      a:IO;
+      b() : Bool {a};
+      main() :Bool {{a;b();}};
+};

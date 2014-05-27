@@ -1,0 +1,4 @@
+#name "tests/test8.cl"
+#2 STR_CONST "he\\ll\nO\n'"
+#4 STR_CONST "hello\"4"
+#7 ERROR "EOF in comment"

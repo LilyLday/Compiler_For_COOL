@@ -1,0 +1,26 @@
+(*Class Y inherits A {
+   main() : Object {
+      {
+      let X: String <- stack.pop(), y: String <- stack.pop(), z: String <- Stack.pop() in {stack <- Stack.cons(x); stack <- stack.cons(y);};
+      Z <- 9;
+      }
+
+   };
+   g: String <- B;
+
+};*)
+Class Y inherits A {
+
+   print_list(l : List) : Object {
+      {
+      if L.head() = "" then self
+                   else {
+                           z <- X+y;
+                           z :String <- "hello";
+                        }
+      fi;
+      let x: String <- stack.pop(), y: String <- stack.pop() in {stack <- Stack.cons(x); stack <- stack.cons(y);};
+      }
+   };
+   g: String <- B;
+};

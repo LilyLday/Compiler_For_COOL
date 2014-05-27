@@ -1,0 +1,7 @@
+class A {
+      a: Int;
+      a() :Int{if true then 1 else "1" fi};
+};
+class Main {
+      main() :Int { {let x : T <- "1" in x.hello(); case i of x: SELF_TYPE => x + 1; y: T => y + "12"; y:T => {y + "12";new Object;3;} ; self: String => {self.hello();self + 1;}; esac;}};
+};

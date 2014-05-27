@@ -1,0 +1,19 @@
+
+class Hello{
+      main(a:String, b:SELF_TYPE, self: String, self:String):Int{{a + 1;b + 1;}};
+      main() : IO{"1"};
+      main: Bool <- false;
+      main:String;      
+};
+
+class A inherits Hello{
+  main(main: Int, main:Hi):Hi{{main + 2; main + "2";}};
+  
+  main:String;
+  main:Int <- "1";
+
+  hello(): Int{main("1")};
+};
+
+class Main{
+};

@@ -1,0 +1,4 @@
+#name "tests/test6.cl"
+#1 ERROR "String contains escaped null character."
+#2 INT_CONST 123
+#4 ERROR "String contains null character."

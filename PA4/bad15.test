@@ -1,0 +1,16 @@
+class B inherits A{
+};
+class A{
+};
+class A inherits SELF_TYPE { 
+
+};
+
+class A inherits C{
+};
+
+class C inherits B{
+};
+class SELF_TYPE inherits SELF_TYPE{
+};
+

@@ -1,0 +1,3030 @@
+#3
+_program
+  #3
+  _class
+    A
+    Object
+    "good.cl"
+    (
+    #4
+    _method
+      foo
+      #4
+      _formal
+        a
+        A
+      Bool
+      #4
+      _block
+        #4
+        _lt
+          #4
+          _int
+            6
+          : Int
+          #4
+          _int
+            7
+          : Int
+        : Bool
+        #4
+        _leq
+          #4
+          _int
+            6
+          : Int
+          #4
+          _int
+            7
+          : Int
+        : Bool
+        #4
+        _comp
+          #4
+          _bool
+            1
+          : Bool
+        : Bool
+      : Bool
+    #5
+    _method
+      real
+      Bool
+      #5
+      _bool
+        1
+      : Bool
+    )
+  #13
+  _class
+    Count
+    Object
+    "good.cl"
+    (
+    #14
+    _attr
+      i
+      Int
+      #14
+      _int
+        0
+      : Int
+    #15
+    _method
+      inc
+      SELF_TYPE
+      #16
+      _block
+        #17
+        _assign
+          i
+          #17
+          _plus
+            #17
+            _object
+              i
+            : Int
+            #17
+            _int
+              1
+            : Int
+          : Int
+        : Int
+        #18
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #25
+  _class
+    Stock
+    Count
+    "good.cl"
+    (
+    #26
+    _attr
+      name
+      String
+      #15
+      _no_expr
+      : _no_type
+    #27
+    _method
+      get
+      String
+      #27
+      _object
+        name
+      : String
+    )
+  #32
+  _class
+    Upper
+    Object
+    "good.cl"
+    (
+    )
+  #33
+  _class
+    Lower
+    Upper
+    "good.cl"
+    (
+    #34
+    _method
+      checkupper
+      #34
+      _formal
+        x
+        Bool
+      Upper
+      #35
+      _cond
+        #35
+        _object
+          x
+        : Bool
+        #35
+        _new
+          Lower
+        : Lower
+        #35
+        _new
+          Upper
+        : Upper
+      : Upper
+    #38
+    _method
+      checkupper1
+      #38
+      _formal
+        x
+        Bool
+      Object
+      #39
+      _cond
+        #39
+        _object
+          x
+        : Bool
+        #39
+        _new
+          Lower
+        : Lower
+        #39
+        _new
+          Upper
+        : Upper
+      : Upper
+    )
+  #46
+  _class
+    M
+    IO
+    "good.cl"
+    (
+    #47
+    _attr
+      x
+      Int
+      #47
+      _int
+        1
+      : Int
+    #48
+    _attr
+      y
+      Int
+      #47
+      _no_expr
+      : _no_type
+    #49
+    _attr
+      a
+      Empty
+      #49
+      _new
+        Empty
+      : Empty
+    #50
+    _attr
+      b
+      Empty
+      #49
+      _no_expr
+      : _no_type
+    #52
+    _method
+      voidtest
+      Int
+      #53
+      _block
+        #54
+        _cond
+          #54
+          _comp
+            #54
+            _isvoid
+              #54
+              _object
+                x
+              : Int
+            : Bool
+          : Bool
+          #54
+          _int
+            1
+          : Int
+          #54
+          _int
+            2
+          : Int
+        : Int
+        #55
+        _cond
+          #55
+          _comp
+            #55
+            _isvoid
+              #55
+              _object
+                y
+              : Int
+            : Bool
+          : Bool
+          #55
+          _int
+            3
+          : Int
+          #55
+          _int
+            4
+          : Int
+        : Int
+        #56
+        _cond
+          #56
+          _comp
+            #56
+            _isvoid
+              #56
+              _object
+                a
+              : Empty
+            : Bool
+          : Bool
+          #56
+          _int
+            5
+          : Int
+          #56
+          _int
+            6
+          : Int
+        : Int
+        #57
+        _cond
+          #57
+          _isvoid
+            #57
+            _object
+              b
+            : Empty
+          : Bool
+          #57
+          _int
+            7
+          : Int
+          #57
+          _int
+            8
+          : Int
+        : Int
+      : Int
+    )
+  #62
+  _class
+    Empty
+    Object
+    "good.cl"
+    (
+    )
+  #68
+  _class
+    B
+    Object
+    "good.cl"
+    (
+    #69
+    _method
+      foo
+      #69
+      _formal
+        a
+        Int
+      #69
+      _formal
+        b
+        B
+      #69
+      _formal
+        c
+        B
+      #69
+      _formal
+        d
+        B
+      SELF_TYPE
+      #70
+      _object
+        self
+      : SELF_TYPE
+    )
+  #78
+  _class
+    C
+    B
+    "good.cl"
+    (
+    #79
+    _attr
+      a
+      Int
+      #79
+      _int
+        1
+      : Int
+    #80
+    _attr
+      b
+      Bool
+      #79
+      _no_expr
+      : _no_type
+    #81
+    _method
+      init
+      #81
+      _formal
+        x
+        Int
+      #81
+      _formal
+        y
+        Bool
+      C
+      #82
+      _block
+        #83
+        _assign
+          a
+          #83
+          _object
+            x
+          : Int
+        : Int
+        #84
+        _assign
+          b
+          #84
+          _dispatch
+            #84
+            _new
+              A
+            : A
+            real
+            (
+            )
+          : Bool
+        : Bool
+        #85
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #93
+  _class
+    D
+    B
+    "good.cl"
+    (
+    #95
+    _method
+      moo
+      SELF_TYPE
+      #96
+      _let
+        b
+        B
+        #96
+        _new
+          B
+        : B
+        #97
+        _dispatch
+          #97
+          _object
+            self
+          : SELF_TYPE
+          foo
+          (
+          #97
+          _int
+            4
+          : Int
+          #97
+          _object
+            b
+          : B
+          #97
+          _object
+            b
+          : B
+          #97
+          _object
+            b
+          : B
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #102
+  _class
+    E
+    D
+    "good.cl"
+    (
+    #103
+    _attr
+      foo
+      Int
+      #95
+      _no_expr
+      : _no_type
+    )
+  #109
+  _class
+    F
+    Object
+    "good.cl"
+    (
+    #110
+    _method
+      class_type
+      #110
+      _formal
+        var
+        B
+      Object
+      #111
+      _typcase
+        #111
+        _object
+          var
+        : B
+        #112
+        _branch
+          b
+          B
+          #112
+          _new
+            B
+          : B
+        #113
+        _branch
+          c
+          C
+          #113
+          _new
+            C
+          : C
+        #114
+        _branch
+          d
+          D
+          #114
+          _new
+            D
+          : D
+        #115
+        _branch
+          e
+          E
+          #115
+          _new
+            E
+          : E
+        #116
+        _branch
+          o
+          Object
+          #116
+          _new
+            Object
+          : Object
+      : Object
+    )
+  #125
+  _class
+    A2I
+    Object
+    "good.cl"
+    (
+    #127
+    _method
+      c2i
+      #127
+      _formal
+        char
+        String
+      Int
+      #128
+      _cond
+        #128
+        _eq
+          #128
+          _object
+            char
+          : String
+          #128
+          _string
+            "0"
+          : String
+        : Bool
+        #128
+        _int
+          0
+        : Int
+        #129
+        _cond
+          #129
+          _eq
+            #129
+            _object
+              char
+            : String
+            #129
+            _string
+              "1"
+            : String
+          : Bool
+          #129
+          _int
+            1
+          : Int
+          #130
+          _cond
+            #130
+            _eq
+              #130
+              _object
+                char
+              : String
+              #130
+              _string
+                "2"
+              : String
+            : Bool
+            #130
+            _int
+              2
+            : Int
+            #131
+            _cond
+              #131
+              _eq
+                #131
+                _object
+                  char
+                : String
+                #131
+                _string
+                  "3"
+                : String
+              : Bool
+              #131
+              _int
+                3
+              : Int
+              #132
+              _cond
+                #132
+                _eq
+                  #132
+                  _object
+                    char
+                  : String
+                  #132
+                  _string
+                    "4"
+                  : String
+                : Bool
+                #132
+                _int
+                  4
+                : Int
+                #133
+                _cond
+                  #133
+                  _eq
+                    #133
+                    _object
+                      char
+                    : String
+                    #133
+                    _string
+                      "5"
+                    : String
+                  : Bool
+                  #133
+                  _int
+                    5
+                  : Int
+                  #134
+                  _cond
+                    #134
+                    _eq
+                      #134
+                      _object
+                        char
+                      : String
+                      #134
+                      _string
+                        "6"
+                      : String
+                    : Bool
+                    #134
+                    _int
+                      6
+                    : Int
+                    #135
+                    _cond
+                      #135
+                      _eq
+                        #135
+                        _object
+                          char
+                        : String
+                        #135
+                        _string
+                          "7"
+                        : String
+                      : Bool
+                      #135
+                      _int
+                        7
+                      : Int
+                      #136
+                      _cond
+                        #136
+                        _eq
+                          #136
+                          _object
+                            char
+                          : String
+                          #136
+                          _string
+                            "8"
+                          : String
+                        : Bool
+                        #136
+                        _int
+                          8
+                        : Int
+                        #137
+                        _cond
+                          #137
+                          _eq
+                            #137
+                            _object
+                              char
+                            : String
+                            #137
+                            _string
+                              "9"
+                            : String
+                          : Bool
+                          #137
+                          _int
+                            9
+                          : Int
+                          #138
+                          _block
+                            #138
+                            _dispatch
+                              #138
+                              _object
+                                self
+                              : SELF_TYPE
+                              abort
+                              (
+                              )
+                            : Object
+                            #138
+                            _int
+                              0
+                            : Int
+                          : Int
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Int
+        : Int
+      : Int
+    )
+  #148
+  _class
+    Foo
+    Object
+    "good.cl"
+    (
+    #149
+    _attr
+      a
+      Foo
+      #149
+      _typcase
+        #149
+        _object
+          self
+        : SELF_TYPE
+        #150
+        _branch
+          n
+          Razz
+          #150
+          _new
+            Bar
+          : Bar
+        #151
+        _branch
+          n
+          Foo
+          #151
+          _new
+            Razz
+          : Razz
+      : Foo
+    #154
+    _attr
+      b
+      Int
+      #154
+      _plus
+        #154
+        _dispatch
+          #154
+          _object
+            a
+          : Foo
+          doh
+          (
+          )
+        : Int
+        #154
+        _static_dispatch
+          #154
+          _object
+            a
+          : Foo
+          Foo
+          doh
+          (
+          )
+        : Int
+      : Int
+    #156
+    _method
+      doh
+      Int
+      #156
+      _int
+        2
+      : Int
+    )
+  #160
+  _class
+    Bar
+    Foo
+    "good.cl"
+    (
+    )
+  #166
+  _class
+    Razz
+    Foo
+    "good.cl"
+    (
+    #168
+    _attr
+      e
+      Foo
+      #168
+      _typcase
+        #168
+        _object
+          self
+        : SELF_TYPE
+        #169
+        _branch
+          n
+          Razz
+          #169
+          _new
+            Bar
+          : Bar
+        #170
+        _branch
+          n
+          Foo
+          #170
+          _object
+            n
+          : Foo
+      : Foo
+    #173
+    _attr
+      f
+      Int
+      #173
+      _plus
+        #173
+        _plus
+          #173
+          _static_dispatch
+            #173
+            _object
+              a
+            : Foo
+            Foo
+            doh
+            (
+            )
+          : Int
+          #173
+          _dispatch
+            #173
+            _object
+              e
+            : Foo
+            doh
+            (
+            )
+          : Int
+        : Int
+        #173
+        _dispatch
+          #173
+          _object
+            self
+          : SELF_TYPE
+          doh
+          (
+          )
+        : Int
+      : Int
+    )
+  #181
+  _class
+    Tl
+    Object
+    "good.cl"
+    (
+    #182
+    _method
+      a2i_aux
+      #182
+      _formal
+        s
+        String
+      Int
+      #183
+      _let
+        int
+        Int
+        #183
+        _int
+          0
+        : Int
+        #184
+        _block
+          #185
+          _let
+            j
+            Int
+            #185
+            _int
+              15
+            : Int
+            #186
+            _let
+              i
+              Int
+              #186
+              _int
+                0
+              : Int
+              #187
+              _loop
+                #187
+                _lt
+                  #187
+                  _object
+                    i
+                  : Int
+                  #187
+                  _object
+                    j
+                  : Int
+                : Bool
+                #188
+                _block
+                  #189
+                  _assign
+                    int
+                    #189
+                    _mul
+                      #189
+                      _object
+                        int
+                      : Int
+                      #189
+                      _int
+                        10
+                      : Int
+                    : Int
+                  : Int
+                  #190
+                  _assign
+                    i
+                    #190
+                    _plus
+                      #190
+                      _object
+                        i
+                      : Int
+                      #190
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Object
+            : Object
+          : Object
+          #195
+          _object
+            int
+          : Int
+        : Int
+      : Int
+    )
+  #207
+  _class
+    Main
+    IO
+    "good.cl"
+    (
+    #208
+    _attr
+      a
+      Stock
+      #183
+      _no_expr
+      : _no_type
+    #209
+    _method
+      main
+      Object
+      #209
+      _block
+        #210
+        _let
+          x
+          Int
+          #210
+          _int
+            5
+          : Int
+          #210
+          _object
+            x
+          : Int
+        : Int
+        #214
+        _assign
+          a
+          #214
+          _dispatch
+            #214
+            _new
+              Stock
+            : Stock
+            inc
+            (
+            )
+          : Stock
+        : Stock
+        #215
+        _static_dispatch
+          #215
+          _object
+            a
+          : Stock
+          Stock
+          inc
+          (
+          )
+        : Stock
+        #216
+        _dispatch
+          #216
+          _object
+            a
+          : Stock
+          get
+          (
+          )
+        : String
+        #217
+        _dispatch
+          #217
+          _int
+            5
+          : Int
+          copy
+          (
+          )
+        : Int
+        #217
+        _dispatch
+          #217
+          _string
+            "test"
+          : String
+          copy
+          (
+          )
+        : String
+        #217
+        _dispatch
+          #217
+          _bool
+            1
+          : Bool
+          copy
+          (
+          )
+        : Bool
+        #218
+        _dispatch
+          #218
+          _string
+            "test"
+          : String
+          length
+          (
+          )
+        : Int
+      : Int
+    )
+  #229
+  _class
+    Graph
+    Object
+    "good.cl"
+    (
+    #231
+    _attr
+      vertices
+      VList
+      #231
+      _new
+        VList
+      : VList
+    #232
+    _attr
+      edges
+      EList
+      #232
+      _new
+        EList
+      : EList
+    #234
+    _method
+      add_vertice
+      #234
+      _formal
+        v
+        Vertice
+      Object
+      #234
+      _block
+        #235
+        _assign
+          edges
+          #235
+          _dispatch
+            #235
+            _dispatch
+              #235
+              _object
+                v
+              : Vertice
+              outgoing
+              (
+              )
+            : EList
+            append
+            (
+            #235
+            _object
+              edges
+            : EList
+            )
+          : EList
+        : EList
+        #236
+        _assign
+          vertices
+          #236
+          _dispatch
+            #236
+            _object
+              vertices
+            : VList
+            cons
+            (
+            #236
+            _object
+              v
+            : Vertice
+            )
+          : VList
+        : VList
+      : VList
+    #239
+    _method
+      print_E
+      Object
+      #239
+      _dispatch
+        #239
+        _object
+          edges
+        : EList
+        print
+        (
+        )
+      : Object
+    #240
+    _method
+      print_V
+      Object
+      #240
+      _dispatch
+        #240
+        _object
+          vertices
+        : VList
+        print
+        (
+        )
+      : Object
+    )
+  #244
+  _class
+    Vertice
+    IO
+    "good.cl"
+    (
+    #246
+    _attr
+      num
+      Int
+      #240
+      _no_expr
+      : _no_type
+    #247
+    _attr
+      out
+      EList
+      #247
+      _new
+        EList
+      : EList
+    #249
+    _method
+      outgoing
+      EList
+      #249
+      _object
+        out
+      : EList
+    #251
+    _method
+      number
+      Int
+      #251
+      _object
+        num
+      : Int
+    #253
+    _method
+      init
+      #253
+      _formal
+        n
+        Int
+      SELF_TYPE
+      #254
+      _block
+        #255
+        _assign
+          num
+          #255
+          _object
+            n
+          : Int
+        : Int
+        #256
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #261
+    _method
+      add_out
+      #261
+      _formal
+        s
+        Edge
+      SELF_TYPE
+      #262
+      _block
+        #263
+        _assign
+          out
+          #263
+          _dispatch
+            #263
+            _object
+              out
+            : EList
+            cons
+            (
+            #263
+            _object
+              s
+            : Edge
+            )
+          : EList
+        : EList
+        #264
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #268
+    _method
+      print
+      Object
+      #269
+      _block
+        #270
+        _dispatch
+          #270
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #270
+          _object
+            num
+          : Int
+          )
+        : SELF_TYPE
+        #271
+        _dispatch
+          #271
+          _object
+            out
+          : EList
+          print
+          (
+          )
+        : Object
+      : Object
+    )
+  #277
+  _class
+    Edge
+    IO
+    "good.cl"
+    (
+    #279
+    _attr
+      from
+      Int
+      #268
+      _no_expr
+      : _no_type
+    #280
+    _attr
+      to
+      Int
+      #268
+      _no_expr
+      : _no_type
+    #281
+    _attr
+      weight
+      Int
+      #268
+      _no_expr
+      : _no_type
+    #283
+    _method
+      init
+      #283
+      _formal
+        f
+        Int
+      #283
+      _formal
+        t
+        Int
+      #283
+      _formal
+        w
+        Int
+      SELF_TYPE
+      #284
+      _block
+        #285
+        _assign
+          from
+          #285
+          _object
+            f
+          : Int
+        : Int
+        #286
+        _assign
+          to
+          #286
+          _object
+            t
+          : Int
+        : Int
+        #287
+        _assign
+          weight
+          #287
+          _object
+            w
+          : Int
+        : Int
+        #288
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #292
+    _method
+      print
+      Object
+      #293
+      _block
+        #294
+        _dispatch
+          #294
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #294
+          _string
+            " ("
+          : String
+          )
+        : SELF_TYPE
+        #295
+        _dispatch
+          #295
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #295
+          _object
+            from
+          : Int
+          )
+        : SELF_TYPE
+        #296
+        _dispatch
+          #296
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #296
+          _string
+            ","
+          : String
+          )
+        : SELF_TYPE
+        #297
+        _dispatch
+          #297
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #297
+          _object
+            to
+          : Int
+          )
+        : SELF_TYPE
+        #298
+        _dispatch
+          #298
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #298
+          _string
+            ")"
+          : String
+          )
+        : SELF_TYPE
+        #299
+        _dispatch
+          #299
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #299
+          _object
+            weight
+          : Int
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #307
+  _class
+    EList
+    IO
+    "good.cl"
+    (
+    #309
+    _attr
+      car
+      Edge
+      #292
+      _no_expr
+      : _no_type
+    #311
+    _method
+      isNil
+      Bool
+      #311
+      _bool
+        1
+      : Bool
+    #313
+    _method
+      head
+      Edge
+      #313
+      _block
+        #313
+        _dispatch
+          #313
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #313
+        _object
+          car
+        : Edge
+      : Edge
+    #315
+    _method
+      tail
+      EList
+      #315
+      _block
+        #315
+        _dispatch
+          #315
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #315
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #317
+    _method
+      cons
+      #317
+      _formal
+        e
+        Edge
+      EList
+      #318
+      _dispatch
+        #318
+        _new
+          ECons
+        : ECons
+        init
+        (
+        #318
+        _object
+          e
+        : Edge
+        #318
+        _object
+          self
+        : SELF_TYPE
+        )
+      : EList
+    #321
+    _method
+      append
+      #321
+      _formal
+        l
+        EList
+      EList
+      #322
+      _cond
+        #322
+        _dispatch
+          #322
+          _object
+            self
+          : SELF_TYPE
+          isNil
+          (
+          )
+        : Bool
+        #322
+        _object
+          l
+        : EList
+        #323
+        _dispatch
+          #323
+          _dispatch
+            #323
+            _dispatch
+              #323
+              _object
+                self
+              : SELF_TYPE
+              tail
+              (
+              )
+            : EList
+            append
+            (
+            #323
+            _object
+              l
+            : EList
+            )
+          : EList
+          cons
+          (
+          #323
+          _dispatch
+            #323
+            _object
+              self
+            : SELF_TYPE
+            head
+            (
+            )
+          : Edge
+          )
+        : EList
+      : EList
+    #327
+    _method
+      print
+      Object
+      #328
+      _dispatch
+        #328
+        _object
+          self
+        : SELF_TYPE
+        out_string
+        (
+        #328
+        _string
+          "\n"
+        : String
+        )
+      : SELF_TYPE
+    )
+  #334
+  _class
+    ECons
+    EList
+    "good.cl"
+    (
+    #336
+    _attr
+      cdr
+      EList
+      #327
+      _no_expr
+      : _no_type
+    #338
+    _method
+      isNil
+      Bool
+      #338
+      _bool
+        0
+      : Bool
+    #340
+    _method
+      head
+      Edge
+      #340
+      _object
+        car
+      : Edge
+    #342
+    _method
+      tail
+      EList
+      #342
+      _object
+        cdr
+      : EList
+    #344
+    _method
+      init
+      #344
+      _formal
+        e
+        Edge
+      #344
+      _formal
+        rest
+        EList
+      EList
+      #345
+      _block
+        #346
+        _assign
+          car
+          #346
+          _object
+            e
+          : Edge
+        : Edge
+        #347
+        _assign
+          cdr
+          #347
+          _object
+            rest
+          : EList
+        : EList
+        #348
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #352
+    _method
+      print
+      Object
+      #353
+      _block
+        #354
+        _dispatch
+          #354
+          _object
+            car
+          : Edge
+          print
+          (
+          )
+        : Object
+        #355
+        _dispatch
+          #355
+          _object
+            cdr
+          : EList
+          print
+          (
+          )
+        : Object
+      : Object
+    )
+  #364
+  _class
+    VList
+    IO
+    "good.cl"
+    (
+    #366
+    _attr
+      car
+      Vertice
+      #352
+      _no_expr
+      : _no_type
+    #368
+    _method
+      isNil
+      Bool
+      #368
+      _bool
+        1
+      : Bool
+    #370
+    _method
+      head
+      Vertice
+      #370
+      _block
+        #370
+        _dispatch
+          #370
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #370
+        _object
+          car
+        : Vertice
+      : Vertice
+    #372
+    _method
+      tail
+      VList
+      #372
+      _block
+        #372
+        _dispatch
+          #372
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #372
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #374
+    _method
+      cons
+      #374
+      _formal
+        v
+        Vertice
+      VList
+      #375
+      _dispatch
+        #375
+        _new
+          VCons
+        : VCons
+        init
+        (
+        #375
+        _object
+          v
+        : Vertice
+        #375
+        _object
+          self
+        : SELF_TYPE
+        )
+      : VList
+    #378
+    _method
+      print
+      Object
+      #378
+      _dispatch
+        #378
+        _object
+          self
+        : SELF_TYPE
+        out_string
+        (
+        #378
+        _string
+          "\n"
+        : String
+        )
+      : SELF_TYPE
+    )
+  #383
+  _class
+    VCons
+    VList
+    "good.cl"
+    (
+    #385
+    _attr
+      cdr
+      VList
+      #378
+      _no_expr
+      : _no_type
+    #387
+    _method
+      isNil
+      Bool
+      #387
+      _bool
+        0
+      : Bool
+    #389
+    _method
+      head
+      Vertice
+      #389
+      _object
+        car
+      : Vertice
+    #391
+    _method
+      tail
+      VList
+      #391
+      _object
+        cdr
+      : VList
+    #393
+    _method
+      init
+      #393
+      _formal
+        v
+        Vertice
+      #393
+      _formal
+        rest
+        VList
+      VList
+      #394
+      _block
+        #395
+        _assign
+          car
+          #395
+          _object
+            v
+          : Vertice
+        : Vertice
+        #396
+        _assign
+          cdr
+          #396
+          _object
+            rest
+          : VList
+        : VList
+        #397
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #401
+    _method
+      print
+      Object
+      #402
+      _block
+        #403
+        _dispatch
+          #403
+          _object
+            car
+          : Vertice
+          print
+          (
+          )
+        : Object
+        #404
+        _dispatch
+          #404
+          _object
+            cdr
+          : VList
+          print
+          (
+          )
+        : Object
+      : Object
+    )
+  #411
+  _class
+    Parse
+    IO
+    "good.cl"
+    (
+    #414
+    _attr
+      boolop
+      BoolOp
+      #414
+      _new
+        BoolOp
+      : BoolOp
+    #416
+    _method
+      read_input
+      Graph
+      #418
+      _let
+        g
+        Graph
+        #418
+        _new
+          Graph
+        : Graph
+        #418
+        _block
+          #419
+          _let
+            line
+            String
+            #419
+            _dispatch
+              #419
+              _object
+                self
+              : SELF_TYPE
+              in_string
+              (
+              )
+            : String
+            #420
+            _loop
+              #420
+              _dispatch
+                #420
+                _object
+                  boolop
+                : BoolOp
+                and
+                (
+                #420
+                _comp
+                  #420
+                  _eq
+                    #420
+                    _object
+                      line
+                    : String
+                    #420
+                    _string
+                      "\n"
+                    : String
+                  : Bool
+                : Bool
+                #420
+                _comp
+                  #420
+                  _eq
+                    #420
+                    _object
+                      line
+                    : String
+                    #420
+                    _string
+                      ""
+                    : String
+                  : Bool
+                : Bool
+                )
+              : Bool
+              #420
+              _block
+                #423
+                _dispatch
+                  #423
+                  _object
+                    g
+                  : Graph
+                  add_vertice
+                  (
+                  #423
+                  _dispatch
+                    #423
+                    _object
+                      self
+                    : SELF_TYPE
+                    parse_line
+                    (
+                    #423
+                    _object
+                      line
+                    : String
+                    )
+                  : Vertice
+                  )
+                : Object
+                #424
+                _assign
+                  line
+                  #424
+                  _dispatch
+                    #424
+                    _object
+                      self
+                    : SELF_TYPE
+                    in_string
+                    (
+                    )
+                  : String
+                : String
+              : String
+            : Object
+          : Object
+          #427
+          _object
+            g
+          : Graph
+        : Graph
+      : Graph
+    #432
+    _method
+      parse_line
+      #432
+      _formal
+        s
+        String
+      Vertice
+      #433
+      _let
+        v
+        Vertice
+        #433
+        _dispatch
+          #433
+          _new
+            Vertice
+          : Vertice
+          init
+          (
+          #433
+          _dispatch
+            #433
+            _object
+              self
+            : SELF_TYPE
+            a2i
+            (
+            #433
+            _object
+              s
+            : String
+            )
+          : Int
+          )
+        : Vertice
+        #433
+        _block
+          #434
+          _loop
+            #434
+            _comp
+              #434
+              _eq
+                #434
+                _dispatch
+                  #434
+                  _object
+                    rest
+                  : String
+                  length
+                  (
+                  )
+                : Int
+                #434
+                _int
+                  0
+                : Int
+              : Bool
+            : Bool
+            #434
+            _block
+              #437
+              _let
+                succ
+                Int
+                #437
+                _dispatch
+                  #437
+                  _object
+                    self
+                  : SELF_TYPE
+                  a2i
+                  (
+                  #437
+                  _object
+                    rest
+                  : String
+                  )
+                : Int
+                #438
+                _let
+                  weight
+                  Int
+                  #438
+                  _dispatch
+                    #438
+                    _object
+                      self
+                    : SELF_TYPE
+                    a2i
+                    (
+                    #438
+                    _object
+                      rest
+                    : String
+                    )
+                  : Int
+                  #440
+                  _dispatch
+                    #440
+                    _object
+                      v
+                    : Vertice
+                    add_out
+                    (
+                    #440
+                    _dispatch
+                      #440
+                      _new
+                        Edge
+                      : Edge
+                      init
+                      (
+                      #440
+                      _dispatch
+                        #440
+                        _object
+                          v
+                        : Vertice
+                        number
+                        (
+                        )
+                      : Int
+                      #441
+                      _object
+                        succ
+                      : Int
+                      #442
+                      _object
+                        weight
+                      : Int
+                      )
+                    : Edge
+                    )
+                  : Vertice
+                : Vertice
+              : Vertice
+            : Vertice
+          : Object
+          #445
+          _object
+            v
+          : Vertice
+        : Vertice
+      : Vertice
+    #450
+    _method
+      c2i
+      #450
+      _formal
+        char
+        String
+      Int
+      #451
+      _cond
+        #451
+        _eq
+          #451
+          _object
+            char
+          : String
+          #451
+          _string
+            "0"
+          : String
+        : Bool
+        #451
+        _int
+          0
+        : Int
+        #452
+        _cond
+          #452
+          _eq
+            #452
+            _object
+              char
+            : String
+            #452
+            _string
+              "1"
+            : String
+          : Bool
+          #452
+          _int
+            1
+          : Int
+          #453
+          _cond
+            #453
+            _eq
+              #453
+              _object
+                char
+              : String
+              #453
+              _string
+                "2"
+              : String
+            : Bool
+            #453
+            _int
+              2
+            : Int
+            #454
+            _cond
+              #454
+              _eq
+                #454
+                _object
+                  char
+                : String
+                #454
+                _string
+                  "3"
+                : String
+              : Bool
+              #454
+              _int
+                3
+              : Int
+              #455
+              _cond
+                #455
+                _eq
+                  #455
+                  _object
+                    char
+                  : String
+                  #455
+                  _string
+                    "4"
+                  : String
+                : Bool
+                #455
+                _int
+                  4
+                : Int
+                #456
+                _cond
+                  #456
+                  _eq
+                    #456
+                    _object
+                      char
+                    : String
+                    #456
+                    _string
+                      "5"
+                    : String
+                  : Bool
+                  #456
+                  _int
+                    5
+                  : Int
+                  #457
+                  _cond
+                    #457
+                    _eq
+                      #457
+                      _object
+                        char
+                      : String
+                      #457
+                      _string
+                        "6"
+                      : String
+                    : Bool
+                    #457
+                    _int
+                      6
+                    : Int
+                    #458
+                    _cond
+                      #458
+                      _eq
+                        #458
+                        _object
+                          char
+                        : String
+                        #458
+                        _string
+                          "7"
+                        : String
+                      : Bool
+                      #458
+                      _int
+                        7
+                      : Int
+                      #459
+                      _cond
+                        #459
+                        _eq
+                          #459
+                          _object
+                            char
+                          : String
+                          #459
+                          _string
+                            "8"
+                          : String
+                        : Bool
+                        #459
+                        _int
+                          8
+                        : Int
+                        #460
+                        _cond
+                          #460
+                          _eq
+                            #460
+                            _object
+                              char
+                            : String
+                            #460
+                            _string
+                              "9"
+                            : String
+                          : Bool
+                          #460
+                          _int
+                            9
+                          : Int
+                          #461
+                          _block
+                            #461
+                            _dispatch
+                              #461
+                              _object
+                                self
+                              : SELF_TYPE
+                              abort
+                              (
+                              )
+                            : Object
+                            #461
+                            _int
+                              0
+                            : Int
+                          : Int
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Int
+        : Int
+      : Int
+    #465
+    _attr
+      rest
+      String
+      #450
+      _no_expr
+      : _no_type
+    #467
+    _method
+      a2i
+      #467
+      _formal
+        s
+        String
+      Int
+      #468
+      _cond
+        #468
+        _eq
+          #468
+          _dispatch
+            #468
+            _object
+              s
+            : String
+            length
+            (
+            )
+          : Int
+          #468
+          _int
+            0
+          : Int
+        : Bool
+        #468
+        _int
+          0
+        : Int
+        #469
+        _cond
+          #469
+          _eq
+            #469
+            _dispatch
+              #469
+              _object
+                s
+              : String
+              substr
+              (
+              #469
+              _int
+                0
+              : Int
+              #469
+              _int
+                1
+              : Int
+              )
+            : String
+            #469
+            _string
+              "-"
+            : String
+          : Bool
+          #469
+          _neg
+            #469
+            _dispatch
+              #469
+              _object
+                self
+              : SELF_TYPE
+              a2i_aux
+              (
+              #469
+              _dispatch
+                #469
+                _object
+                  s
+                : String
+                substr
+                (
+                #469
+                _int
+                  1
+                : Int
+                #469
+                _sub
+                  #469
+                  _dispatch
+                    #469
+                    _object
+                      s
+                    : String
+                    length
+                    (
+                    )
+                  : Int
+                  #469
+                  _int
+                    1
+                  : Int
+                : Int
+                )
+              : String
+              )
+            : Int
+          : Int
+          #470
+          _cond
+            #470
+            _eq
+              #470
+              _dispatch
+                #470
+                _object
+                  s
+                : String
+                substr
+                (
+                #470
+                _int
+                  0
+                : Int
+                #470
+                _int
+                  1
+                : Int
+                )
+              : String
+              #470
+              _string
+                " "
+              : String
+            : Bool
+            #470
+            _dispatch
+              #470
+              _object
+                self
+              : SELF_TYPE
+              a2i
+              (
+              #470
+              _dispatch
+                #470
+                _object
+                  s
+                : String
+                substr
+                (
+                #470
+                _int
+                  1
+                : Int
+                #470
+                _sub
+                  #470
+                  _dispatch
+                    #470
+                    _object
+                      s
+                    : String
+                    length
+                    (
+                    )
+                  : Int
+                  #470
+                  _int
+                    1
+                  : Int
+                : Int
+                )
+              : String
+              )
+            : Int
+            #471
+            _dispatch
+              #471
+              _object
+                self
+              : SELF_TYPE
+              a2i_aux
+              (
+              #471
+              _object
+                s
+              : String
+              )
+            : Int
+          : Int
+        : Int
+      : Int
+    #475
+    _method
+      a2i_aux
+      #475
+      _formal
+        s
+        String
+      Int
+      #476
+      _let
+        int
+        Int
+        #476
+        _int
+          0
+        : Int
+        #477
+        _block
+          #478
+          _let
+            j
+            Int
+            #478
+            _dispatch
+              #478
+              _object
+                s
+              : String
+              length
+              (
+              )
+            : Int
+            #479
+            _let
+              i
+              Int
+              #479
+              _int
+                0
+              : Int
+              #480
+              _loop
+                #480
+                _lt
+                  #480
+                  _object
+                    i
+                  : Int
+                  #480
+                  _object
+                    j
+                  : Int
+                : Bool
+                #481
+                _let
+                  c
+                  String
+                  #481
+                  _dispatch
+                    #481
+                    _object
+                      s
+                    : String
+                    substr
+                    (
+                    #481
+                    _object
+                      i
+                    : Int
+                    #481
+                    _int
+                      1
+                    : Int
+                    )
+                  : String
+                  #482
+                  _cond
+                    #482
+                    _eq
+                      #482
+                      _object
+                        c
+                      : String
+                      #482
+                      _string
+                        " "
+                      : String
+                    : Bool
+                    #483
+                    _block
+                      #484
+                      _assign
+                        rest
+                        #484
+                        _dispatch
+                          #484
+                          _object
+                            s
+                          : String
+                          substr
+                          (
+                          #484
+                          _plus
+                            #484
+                            _object
+                              i
+                            : Int
+                            #484
+                            _int
+                              1
+                            : Int
+                          : Int
+                          #484
+                          _sub
+                            #484
+                            _sub
+                              #484
+                              _dispatch
+                                #484
+                                _object
+                                  s
+                                : String
+                                length
+                                (
+                                )
+                              : Int
+                              #484
+                              _object
+                                i
+                              : Int
+                            : Int
+                            #484
+                            _int
+                              1
+                            : Int
+                          : Int
+                          )
+                        : String
+                      : String
+                      #485
+                      _assign
+                        i
+                        #485
+                        _object
+                          j
+                        : Int
+                      : Int
+                    : Int
+                    #487
+                    _cond
+                      #487
+                      _eq
+                        #487
+                        _object
+                          c
+                        : String
+                        #487
+                        _string
+                          ","
+                        : String
+                      : Bool
+                      #488
+                      _block
+                        #489
+                        _assign
+                          rest
+                          #489
+                          _dispatch
+                            #489
+                            _object
+                              s
+                            : String
+                            substr
+                            (
+                            #489
+                            _plus
+                              #489
+                              _object
+                                i
+                              : Int
+                              #489
+                              _int
+                                1
+                              : Int
+                            : Int
+                            #489
+                            _sub
+                              #489
+                              _sub
+                                #489
+                                _dispatch
+                                  #489
+                                  _object
+                                    s
+                                  : String
+                                  length
+                                  (
+                                  )
+                                : Int
+                                #489
+                                _object
+                                  i
+                                : Int
+                              : Int
+                              #489
+                              _int
+                                1
+                              : Int
+                            : Int
+                            )
+                          : String
+                        : String
+                        #490
+                        _assign
+                          i
+                          #490
+                          _object
+                            j
+                          : Int
+                        : Int
+                      : Int
+                      #493
+                      _block
+                        #494
+                        _assign
+                          int
+                          #494
+                          _plus
+                            #494
+                            _mul
+                              #494
+                              _object
+                                int
+                              : Int
+                              #494
+                              _int
+                                10
+                              : Int
+                            : Int
+                            #494
+                            _dispatch
+                              #494
+                              _object
+                                self
+                              : SELF_TYPE
+                              c2i
+                              (
+                              #494
+                              _dispatch
+                                #494
+                                _object
+                                  s
+                                : String
+                                substr
+                                (
+                                #494
+                                _object
+                                  i
+                                : Int
+                                #494
+                                _int
+                                  1
+                                : Int
+                                )
+                              : String
+                              )
+                            : Int
+                          : Int
+                        : Int
+                        #495
+                        _assign
+                          i
+                          #495
+                          _plus
+                            #495
+                            _object
+                              i
+                            : Int
+                            #495
+                            _int
+                              1
+                            : Int
+                          : Int
+                        : Int
+                        #496
+                        _cond
+                          #496
+                          _eq
+                            #496
+                            _object
+                              i
+                            : Int
+                            #496
+                            _object
+                              j
+                            : Int
+                          : Bool
+                          #496
+                          _assign
+                            rest
+                            #496
+                            _string
+                              ""
+                            : String
+                          : String
+                          #496
+                          _string
+                            ""
+                          : String
+                        : String
+                      : String
+                    : Object
+                  : Object
+                : Object
+              : Object
+            : Object
+          : Object
+          #503
+          _object
+            int
+          : Int
+        : Int
+      : Int
+    )
+  #510
+  _class
+    BoolOp
+    Object
+    "good.cl"
+    (
+    #512
+    _method
+      and
+      #512
+      _formal
+        b1
+        Bool
+      #512
+      _formal
+        b2
+        Bool
+      Bool
+      #513
+      _cond
+        #513
+        _object
+          b1
+        : Bool
+        #513
+        _object
+          b2
+        : Bool
+        #513
+        _bool
+          0
+        : Bool
+      : Bool
+    #517
+    _method
+      or
+      #517
+      _formal
+        b1
+        Bool
+      #517
+      _formal
+        b2
+        Bool
+      Bool
+      #518
+      _cond
+        #518
+        _object
+          b1
+        : Bool
+        #518
+        _bool
+          1
+        : Bool
+        #518
+        _object
+          b2
+        : Bool
+      : Bool
+    )

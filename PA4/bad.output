@@ -1,0 +1,181 @@
+bad.cl:55: Class C is redefined.
+bad.cl:66: Class A is redefined.
+bad.cl:70: Class B is redefined.
+bad.cl:74: Class E can't inherit from String
+bad.cl:78: Class D can't inherit from Bool
+bad.cl:82: Class C is redefined.
+bad.cl:89: Class A is redefined.
+bad.cl:90: Class B is redefined.
+bad.cl:104: Class C is redefined.
+bad.cl:113: Class A is redefined.
+bad.cl:122: Class B is redefined.
+bad.cl:131: Class C is redefined.
+bad.cl:135: Class D is redefined.
+bad.cl:152: Class Main is redefined.
+bad.cl:165: Class E is redefined.
+bad.cl:174: Class A is redefined.
+bad.cl:177: Class B is redefined.
+bad.cl:184: Class C is redefined.
+bad.cl:188: Class D is redefined.
+bad.cl:196: Class A is redefined.
+bad.cl:198: Class B is redefined.
+bad.cl:202: Class C is redefined.
+bad.cl:207: Class D is redefined.
+bad.cl:210: Class E is redefined.
+bad.cl:213: Class F is redefined.
+bad.cl:219: Class A is redefined.
+bad.cl:224: Class SELF_TYPE is redefined.
+bad.cl:233: Class A is redefined.
+bad.cl:253: Class Main is redefined.
+bad.cl:266: Class Hello is redefined.
+bad.cl:278: Class A is redefined.
+bad.cl:297: Class B is redefined.
+bad.cl:301: Class A is redefined.
+bad.cl:309: Class Main is redefined.
+bad.cl:313: Class C is redefined.
+bad.cl:321: Class D is redefined.
+bad.cl:333: Class A is redefined.
+bad.cl:337: Class Main is redefined.
+Compilation halted due to static semantic errors.
+
+
+the following are the outputs from each individual tests, since the bad.cl test is aborted after the first pass, we decide to past each test result here:
+
+bad11.cl:17: Type SubTest for attribute s is not defined.
+bad11.cl:18: Type B for attribute n is not defined.
+bad11.cl:22: Initialize new object to undefined type SubTest
+bad11.cl:22: Method testLet is undefined for class Object
+bad11.cl:22: Inferred type Object of assignment to identifer s doesn't conform to its declared type SubTest
+bad11.cl:23: Initialize new object to undefined type SubTest
+bad11.cl:23: Method testLet is undefined for class Object
+bad11.cl:23: Inferred type Object of assignment to identifer n doesn't conform to its declared type B
+bad11.cl:24: Inferred parameter type Int of method call init doesn't conform to declared type Bool
+bad11.cl:25: Method init of class C is called with wrong number of arguments.
+bad11.cl:26: Method iinit is undefined for class C
+Compilation halted due to static semantic errors.
+----------------------------------------------------------------------------------------------------
+
+Class Main is not defined
+bad11.cl:10: Inferred type B of initialization to identifier a in let expression doesn't conform to its declared type SELF_TYPE
+bad11.cl:14: Inferred type B of initialization to identifier a in let expression doesn't conform to its declared type SELF_TYPE
+Compilation halted due to static semantic errors.
+
+----------------------------------------------------------------------------------------------------
+bad11.cl:4: Class A can't inherit from Int
+bad11.cl:12: Class E can't inherit from String
+bad11.cl:16: Class D can't inherit from Bool
+bad11.cl:8: Class F is not defined so should not be inherited by B
+Compilation halted due to static semantic errors.
+
+--------------------------------------------------------------------------------------------------------
+
+Class Main is not defined
+bad11.cl:5: Inferred return type A of method checkupper doesn't conform to declared return type B
+bad11.cl:9: Inferred return type A of method checkupper1 doesn't conform to declared return type C
+bad11.cl:13: Inferred return type Object of method checkupper2 doesn't conform to declared return type A
+Compilation halted due to static semantic errors.
+
+----------------------------------------------------------------------------------------------------------
+
+bad11.cl:14: Attribute a is inherited and thus cannot be redefined.
+bad11.cl:15: Attribute b is inherited and thus cannot be redefined.
+bad11.cl:16: Attribute c is inherited and thus cannot be redefined.
+bad11.cl:18: Declared type of formal parameter String of method test is not the same as the inherited type Int
+bad11.cl:18: Declared type of formal parameter Int of method test is not the same as the inherited type Bool
+bad11.cl:18: Declared type of formal parameter Int of method test is not the same as the inherited type String
+bad11.cl:23: Declared return type Bool of method test is not the same as the inherited return type Int
+bad11.cl:29: Attribute a is redefined in class D
+bad11.cl:32: Duplicate formal parameter name: m
+bad11.cl:35: Return type RandomType of method e is not defined.
+bad11.cl:38: Typef of formal parameter a cannot be SELF_TYPE
+bad11.cl:38: undefined identifier x
+bad11.cl:43: Class Main doesn't contain main() method.
+Compilation halted due to static semantic errors.
+
+-----------------------------------------------------------------------------------------------------------
+
+Class Main is not defined
+bad11.cl:6: Declared type of formal parameter F of method main is not the same as the inherited type E
+bad11.cl:15: Declared return type B of method m is not the same as the inherited return type A
+bad11.cl:26: Declared type of formal parameter Object of method n is not the same as the inherited type C
+Compilation halted due to static semantic errors.
+
+-----------------------------------------------------------------------------------------------------------
+
+bad11.cl:14: Inheritance graph has cycle which involves D
+bad11.cl:9: Inheritance graph has cycle which involves C
+bad11.cl:5: Inheritance graph has cycle which involves B
+bad11.cl:3: Inheritance graph has cycle which involves A
+bad11.cl:20: Inheritance graph has cycle which involves F
+bad11.cl:17: Inheritance graph has cycle which involves E
+Compilation halted due to static semantic errors.
+
+---------------------------------------------------------------------------------------------------------------
+bad11.cl:3: Class A can't inherit from SELF_TYPE
+bad11.cl:8: Class SELF_TYPE is redefined.
+Compilation halted due to static semantic errors.
+
+---------------------------------------------------------------------------------------------------------------
+bad11.cl:9: Attribute a is inherited and thus cannot be redefined.
+bad11.cl:10: Number of formal parameters for method main is differernt from that of inherited method signature
+bad11.cl:12: Illegal expression arguments: Int + String
+bad11.cl:10: Inferred return type Int of method main doesn't conform to declared return type Bool
+bad11.cl:20: Declared type of formal parameter Int of method main is not the same as the inherited type String
+bad11.cl:21: Inferred parameter type Int of method call main doesn't conform to declared type String
+bad11.cl:27: Main method should have no formal parameters
+bad11.cl:28: undefined identifier b
+bad11.cl:28: Inferred parameter type Object of method call foo doesn't conform to declared type A
+bad11.cl:27: Inferred return type Int of method main doesn't conform to declared return type Bool
+Compilation halted due to static semantic errors.
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+Class Main is not defined
+bad11.cl:6: Typef of formal parameter b cannot be SELF_TYPE
+bad11.cl:6: self cannot be formal parameter name.
+bad11.cl:7: Illegal expression arguments: String + Int
+bad11.cl:8: Illegal expression arguments: SELF_TYPE + Int
+bad11.cl:6: Inferred return type String of method main doesn't conform to declared return type IO
+bad11.cl:17: Number of formal parameters for method main is differernt from that of inherited method signature
+bad11.cl:17: Declared return type Hi of method main is not the same as the inherited return type IO
+bad11.cl:17: Declared type Hi of formal parameter main is not defined.
+bad11.cl:19: Illegal expression arguments: Hi + Int
+bad11.cl:17: Return type Hi of method main is not defined.
+bad11.cl:23: Inferred type String of initialization of attribute main doesn't conform to declared attribute type Int
+bad11.cl:25: Method main of class A is called with wrong number of arguments.
+bad11.cl:25: Inferred return type IO of method hello doesn't conform to declared return type Int
+Compilation halted due to static semantic errors.
+
+--------------------------------------------------------------------------------------------------------------------
+bad11.cl:8: Attribute name can't be self
+bad11.cl:8: Illegal expression arguments: Int + String
+bad11.cl:8: Inferred type Int of initialization of attribute self doesn't conform to declared attribute type String
+bad11.cl:11: Assignment to undefined identifier b
+bad11.cl:12: undefined identifier b
+bad11.cl:12: Illegal expression arguments: Object + String
+bad11.cl:10: Inferred return type Int of method b doesn't conform to declared return type IO
+bad11.cl:16: Inferred return type Object of method main doesn't conform to declared return type Bool
+bad11.cl:23: Expression type A doesn't conform to declared static dispatch type C
+bad11.cl:23: Method a of static dispatch class C is called with wrong number of arguments
+bad11.cl:23: Inferred return type String of method b doesn't conform to declared return type Int
+bad11.cl:24: Static dispatch to self_type
+bad11.cl:24: Inferred return type Object of method e doesn't conform to declared return type SELF_TYPE
+bad11.cl:28: Declared return type A of method d is not the same as the inherited return type SELF_TYPE
+Compilation halted due to static semantic errors.
+
+----------------------------------------------------------------------------------------------------------------------
+bad11.cl:8: Inferred return type Object of method a doesn't conform to declared return type Int
+bad11.cl:12: Bind identifier x to undefined type T in let expression
+bad11.cl:12: Dispatch to undefined class T
+bad11.cl:13: undefined identifier i
+bad11.cl:13: Identifier x in case branch binding cannot have SELF_TYPE.
+bad11.cl:14: Illegal expression arguments: SELF_TYPE + Int
+bad11.cl:15: Type T for identifier y in case branch binding is undefined
+bad11.cl:15: Illegal expression arguments: T + String
+bad11.cl:13: Duplicate branch T in case expression
+bad11.cl:16: Type T for identifier y in case branch binding is undefined
+bad11.cl:20: Cannot use self as identifier name in case branch binding.
+bad11.cl:20: Method hello is undefined for class Main
+bad11.cl:21: Illegal expression arguments: SELF_TYPE + Int
+Compilation halted due to static semantic errors.

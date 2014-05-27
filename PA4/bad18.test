@@ -1,0 +1,5 @@
+class A{
+      a:A;
+      a(b: String): String{b};
+      b() : Int { a@A.a()};
+};

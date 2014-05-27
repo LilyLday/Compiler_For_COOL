@@ -1,0 +1,10 @@
+class A{
+   foo(a:A):Int { {6 < 7; 6 <= 7; not true;} };
+   a:A;
+};
+
+class B inherits A{
+    a:B;
+    foo(a:B) :String { {6 < 7; 6<= 7; not true;} };
+};
+

@@ -1,0 +1,15 @@
+#name "tests/test7.cl"
+#2 STR_CONST "this is \nhappy\"\b n 0"
+#3 INT_CONST 3
+#3 LE
+#3 '-'
+#3 INT_CONST 7
+#4 BOOL_CONST false
+#5 ERROR "_"
+#6 STR_CONST "abc\nd"
+#8 OBJECTID hello_
+#9 TYPEID Hello_
+#10 STR_CONST "''"
+#11 ERROR "'"
+#13 ERROR "\\"
+#13 OBJECTID hello

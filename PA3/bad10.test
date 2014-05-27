@@ -1,0 +1,14 @@
+class B {
+ print_list(,l : List) : Object {
+      {
+      if L.head() = "" then self
+                   else {
+                           z <- X+y;
+                           z :String <- "hello";
+                        }
+      fi;
+      let x: String <- stack.pop(), y: String <- stack.pop() in {stack <- Stack.cons(x);};
+      }
+   };
+   g: String <- B;
+};

@@ -1,0 +1,9 @@
+#name "tests/test9.cl"
+#1 ERROR "Unmatched *)"
+#4 ERROR "Unterminated string constant"
+#4 ERROR "_"
+#10 ERROR "Unterminated string constant"
+#11 ERROR "Unterminated string constant"
+#11 TYPEID BAZ
+#11 TYPEID QUX
+#11 ERROR "EOF in string constant"

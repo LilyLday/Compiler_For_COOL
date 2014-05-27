@@ -1,0 +1,10 @@
+class A {
+ int --error: int not TYPEID
+ int;
+ a(): String {};
+ x:String <- X;
+};
+
+(* error: b is not a type identifier *)
+Class b inherits A {
+};

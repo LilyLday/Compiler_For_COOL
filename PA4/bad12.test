@@ -1,0 +1,7 @@
+class A {
+   foo(a:A):Bool { {6 < 7; 6 <= 7; not true;} };
+
+};
+class Hello inherits Main{ a:Main; main(h: Int, y:String) :Bool {{h+"2";let a:A <- new A in a.foo(b);}};};
+class Hi inherits Hello { main(y:String, h:Int, z:String) :String {{h + "2";self@Hello.main(1, 1);}};};
+class Main { a:A;};

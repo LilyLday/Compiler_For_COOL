@@ -1,0 +1,50 @@
+class Hello {
+      inc(h:String) :String {h + 2};
+};
+
+class Count inherits Hello{
+   i : Int <- 0;
+   inc () : SELF_TYPE {
+        {
+            i <- i + 1;
+            self;
+        }
+    };
+ 
+};  
+
+class Stock inherits Count { 
+   name : String; -- name of item
+   get() :String {name };
+   inc(h:String) :String {1 + h};
+};
+
+class Main {
+  a:Stock;
+  i: Int;
+main() : Object {{
+  a <- (new Stock).inc (); 
+    i <- a@Stock.inc(1) + 2; 
+    i<- (new Stock).hello() + "2";
+ }
+};
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
